@@ -2,7 +2,10 @@
 
 function isPromise(input) => {
 	return (
-		input instanceof Promise ||
+		(
+			typeof Promise !== 'undefined' &&
+			input instanceof Promise
+		) ||
 		(
 			input !== null &&
 			typeof input === 'object' &&
