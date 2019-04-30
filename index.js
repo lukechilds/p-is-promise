@@ -1,6 +1,6 @@
 'use strict';
 
-function isPromise(input) => {
+function isPromise(input) {
 	return (
 		(
 			typeof Promise !== 'undefined' &&
